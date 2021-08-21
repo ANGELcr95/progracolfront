@@ -4,7 +4,6 @@ import useAuth from '../Auth/useAuth';
 
 
 const Pages = ()  => {
-  
 
   const auth = useAuth()
   const history =  useHistory()

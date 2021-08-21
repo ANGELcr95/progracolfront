@@ -8,7 +8,6 @@ const AuthProvider = ({children}) => {
     const [user, setUser] = useState(null)
     const [tokenAuth, setTokenAuth] = useState(null)
     const [ligth, setLight] = useState("white")
-    console.log(ligth)
 
     const contextValue ={
         ligth,
