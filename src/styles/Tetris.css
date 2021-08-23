@@ -1,3 +1,25 @@
-.GridTetrsi {
-    
+.Tetris{
+    width: 23%;
+    height: 45vh;
+    border: 1px solid grey;
+    margin: 0 auto 1rem;
+    border-radius:0.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.Tetris h3 {
+    color: grey;
+    font-size: 1.4rem;
+    margin: 0.3rem;
+}
+
+.TetrisPosition{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 80%;
+    border: 1px solid grey;
+    margin: 0 auto 1rem;
+    border-radius:0.5rem;
 }

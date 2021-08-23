@@ -12,6 +12,7 @@ import {
 import Login from './components/Login';
 import Pages from './components/Pages';
 import Figura from './components/Figura';
+import ListaFigura from './components/ListaFiguras';
 
 function App() {
   return (
@@ -19,9 +20,10 @@ function App() {
     <Router>
       <Switch>
         <AuthProvider>  
-
+          
         <PublicRoute exact path='/login' component={Login}/>
- 
+
+        <PrivateRoute exact path='/listaFiguras' component={ListaFigura}/>
         <PrivateRoute exact path='/pages/figura' component={Figura}/>
         <PrivateRoute exact path='/pages' component={Pages}/>
 

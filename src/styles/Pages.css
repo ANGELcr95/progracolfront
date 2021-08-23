@@ -1,8 +1,44 @@
 .Pages {
-    text-align: center;
-    text-align: center;
-    height: 100vh;
-    width: 100vw;
-    background-color: #282c34;
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  flex-direction: column;
+}
+
+.NavBar {
+  margin: 1rem auto;
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.NavBar button {
+  width: 30%;
+}
+
+.Profile {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin: auto;
+  background-color: rgba(248, 248, 255, 0.733);
+  width: 80%;
+  border: goldenrod 0.5rem solid;
+  border-radius: 1rem;
+}
+.DataProfile {
+  margin: auto;
+  width: 55%;
+}
+.ImgProfile {
+  width:45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ImgProfile img{
+  width:80%;
+}

@@ -7,7 +7,7 @@ const AuthProvider = ({children}) => {
 
     const [user, setUser] = useState(null)
     const [tokenAuth, setTokenAuth] = useState(null)
-    const [ligth, setLight] = useState("white")
+    const [ligth, setLight] = useState()
 
     const contextValue ={
         ligth,
@@ -25,6 +25,7 @@ const AuthProvider = ({children}) => {
         },
         logout () {
             setUser(null)
+            localStorage.removeItem('token');
         },
         isLogged() {
             return !! user;

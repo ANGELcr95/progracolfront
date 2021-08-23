@@ -1,0 +1,21 @@
+.Bool{
+    display:flex;
+    flex-wrap: wrap;
+    width: 19%;
+    height: 19%;
+    border: 1px solid grey;
+    margin: auto;
+    border-radius: 0.5rem;
+}
+
+.Bool .Booltrue {
+    background-color: rgb(109, 165, 25);
+    width: 100%;
+    height: 100%;
+}
+
+.Bool .Boolfalse {
+    background-color: gainsboro;
+    width: 100%;
+    height: 100%;
+}

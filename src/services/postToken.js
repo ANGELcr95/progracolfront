@@ -11,6 +11,10 @@ const postToken = async (dataForm) => {
   const response = await fetch("https://java.bocetos.co/userred-0.0.1-SNAPSHOT/auth", requestOptions)
   const data = await response.json();
   console.log(data)
+  
+
+
+  localStorage.setItem('token', data.Authorization);
   return data
 }
 

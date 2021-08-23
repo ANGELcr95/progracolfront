@@ -11,8 +11,6 @@ const Login = () => {
 
   const { register, handleSubmit,reset } = useForm()
   const [dataForm, setDataForm] = useState()
-  
-  // const [dataFiguras, setDataFiguras ] = useState()
 
   let history = useHistory()
   const location = useLocation();
@@ -31,7 +29,7 @@ const Login = () => {
     const datauser = await postToken(dataForm)
     if(datauser){
       auth.login(datauser.name);
-      auth.upToken(datauser.Authorization)
+      auth.upToken(datauser.Authorization || localStorage.getItem("token"))
       history.push(previusObjectURL || '/pages')
     } 
   }
